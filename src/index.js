@@ -1,15 +1,14 @@
 #!/usr/bin/node
-
 const fs = require("fs");
 const path = require("path");
-const files = fs.readdirSync("components");
 const chalk = require("chalk");
 
 const { Command } = require("commander");
 const program = new Command();
 
 const { logError, logSuccess, checkFileExist } = require("./helpers");
-const { writeFile } = require("./utils");
+const { writeFile, getComponentFiles } = require("./utils");
+const files = getComponentFiles();
 const defaultPath = "components";
 
 function getComponentFilNames() {
@@ -108,7 +107,7 @@ function checkComponent(value) {
     };
 }
 
-const { version } = require("./package.json");
+const { version } = require("../package.json");
 program
     .name("create-react-component")
     .description("CLI to create and save existing react component")
