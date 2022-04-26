@@ -1,3 +1,3 @@
-# create-react-component
+# manage-component
 
-Simple tool for create existing component into your react application.
+Simple cli for manage your react component.
