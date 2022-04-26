@@ -22,6 +22,9 @@
   ],
   "author": "re-creators",
   "license": "ISC",
+  "bin": {
+    "manage-component" : "./src/index.js"
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^9.2.0"
