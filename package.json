@@ -1,8 +1,8 @@
 {
   "name": "manage-component",
-  "version": "1.0.0",
-  "description": "Tool for create react component",
-  "main": "./src/index.js",
+  "version": "1.0.1",
+  "description": "Cli for manage react component",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Re-Creators/manage-component"
@@ -20,10 +20,7 @@
     "node",
     "component"
   ],
-  "bin": {
-    "new-component": "./src/index.js"
-  },
-  "author": "Re-Creators",
+  "author": "re-creators",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
