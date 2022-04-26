@@ -3,14 +3,30 @@
   "version": "1.0.0",
   "description": "Tool for create react component",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Re-Creators/create-react-component"
+  },
+  "bugs": {
+    "url": "https://github.com/Re-Creators/create-react-component/issues"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "react",
-    "tool",
-    "node"
+    "reactjs",
+    "cli",
+    "node",
+    "component"
   ],
+  "bin": {
+    "new-component": "./src/index.js"
+  },
   "author": "Re-Creators",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.2.0"
+  }
 }
